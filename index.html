@@ -1,26 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8"/>
-<meta name="description" content="China cheapest sunglasses direct selling"/>
-<title>Taizhou Jiaojiang Yanmu E-Commerce Company</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanmu Glasses</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    a {margin:8px;text-decoration:none}
-</style>
-<body>
-    <div style="padding:12px;border-radius:12px;border:4px solid #EE872A;">
-    <h1><div style="font-family:Zapfino;color: black;font-weight: bolder;">Taizhou Jiaojiang Yanmu E-Commerce Company</div></h1>
-    <br/>
-    <div style="letter-spacing:8px;color:rgb(19, 15, 235);font-size: larger">Shining your life ^_^</div>
-    <div style="font-family:verdana;">copyright ® 2012~2022</div>
+<body class="bg-gray-50 font-sans text-gray-800 scroll-smooth">
+
+<!-- 顶部导航栏 -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 py-2 sm:py-3">
+    <!-- 品牌名称 -->
+    <div class="text-2xl font-bold text-blue-600">YANMU GLASSES</div>
+
+    <!-- 移动端菜单按钮 -->
+    <button id="menu-btn" class="sm:hidden p-2 focus:outline-none">
+      <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- 菜单列表 -->
+    <ul id="menu"
+      class="hidden sm:flex space-x-6 text-gray-700 font-medium transition-all duration-300">
+      <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-600">About</a></li>
+      <li><a href="#products" class="hover:text-blue-600">Products</a></li>
+      <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 移动端下拉菜单 -->
+  <div id="mobile-menu" class="hidden sm:hidden bg-white shadow-inner">
+    <ul class="flex flex-col space-y-2 p-4 text-gray-700 font-medium">
+      <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-600">About</a></li>
+      <li><a href="#products" class="hover:text-blue-600">Products</a></li>
+      <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+
+<!-- Banner -->
+<section id="home" class="pt-20 bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+    <div class="max-w-7xl mx-auto text-center py-32">
+        <h1 class="text-5xl font-bold mb-4">EXPLORING THE FURTURE OF SMART GLASSES</h1>
+        <h2 class="text-3xl font-bold mb-4">SMART DESIGN</h2>
+        <h2 class="text-3xl font-bold mb-4">SMART MANUFACTURING</h2>
+        <h2 class="text-3xl font-bold mb-4">SMART SALES</h2>
+        <p class="text-xl mb-8">Yanmu Glasses brings you innovative technology and an exceptional experience.</p>
+        <a href="#products" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">View models details</a>
     </div>
-    <hr style="margin-top:20px; margin-bottom: 20px;"/>
-    <a href='index.html' style="background-color:#0000ff; color:white; padding: 8px; border-radius: 8px; font-size:large"><b>HOME</b></a>
-    <a href='profile.html' style="background-color:#40B3DF; color:white; padding: 8px; border-radius: 8px; font-size:large">COMPANY PROFILE</a>
-    <a href='products.html' style="background-color:#000000; color:white; padding: 8px; border-radius: 8px; font-size:large">MODELS DETAILS</a>
-    <a href='contact.html' style="background-color:rgb(245, 189, 69); color:white; padding: 8px; border-radius: 8px; font-size:large">CONTACT US</a>
-    <br/><br/>
-    <p><img alt="splash" src="img/splash.jpg"/></p>
+</section>
+
+<!-- 关于我们 -->
+<section id="about" class="max-w-7xl mx-auto py-20 px-4">
+    <h2 class="text-4xl font-bold text-center mb-12 text-blue-600">COMPANY PROFILE</h2>
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+        <img src="images/about.jpg" alt="company profile" class="rounded-lg shadow-lg">
+        <div class="space-y-4">
+            <p>Taizhou Jiaojiang Yanmu E-Commerce Company, as a professional internet trade company with more 10 years experience in optical frames, sunglasses, reading glasses and spectacle spare parts. All factory direct goods delivery fast and price nice. We have similar 1000 designs glasses in quality PC, TR90 or metal material. Almost goods are exported to USA, India, Europe and other Asian countries.</p>
+            <p>We follow a principle: Make good business just same as make good friends.</p>
+            <!--a href="#contact" class="text-white bg-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">CONTACT US</a-->
+        </div>
+        <div class="space-y-4">
+            <p>Yanmu Glasses is committed to integrating cutting-edge technology into everyday life. Our smart glasses combine stylish design with high-performance functionality to provide users with an exceptional visual experience.</p>
+            <p>We focus on the needs of every customer and continuously optimize our products, from hardware to software, to ensure a pleasant experience every time we wear them.</p>
+            <a href="#contact" class="text-white bg-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">CONTACT US</a>
+        </div>
+    </div>
+</section>
+
+<!-- 产品展示 -->
+<section id="products" class="bg-gray-100 py-20 px-4">
+    <h2 class="text-4xl font-bold text-center mb-12 text-blue-600">MODELS DETAILS</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <img src="./images/product/20506.jpg" alt="20506" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/20507.jpg" alt="20507" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/20508.jpg" alt="20508" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/20511.jpg" alt="20511" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/20516.jpg" alt="20516" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/20517.jpg" alt="20517" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/35001.jpg" alt="35001" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/35002.jpg" alt="35002" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/35003.jpg" alt="35003" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/35004.jpg" alt="35004" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/35005.jpg" alt="35005" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/35006.jpg" alt="35006" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/pc2378.jpg" alt="pc2378" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/pc2381.jpg" alt="pc2381" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/pc2382.jpg" alt="pc2382" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/pc2385.jpg" alt="pc2385" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/pc2386.jpg" alt="pc2386" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/pc2387.jpg" alt="pc2387" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/tr81801.jpg" alt="tr81801" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/tr81804.jpg" alt="tr81804" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/tr81805.jpg" alt="tr81805" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/tr81807.jpg" alt="tr81807" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/tr81808.jpg" alt="tr81808" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/tr81809.jpg" alt="tr81809" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/other_c1-c11.jpg" alt="other_c1-c11" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/other_c01-c07.jpg" alt="other_c01-c07" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/other_color-display.jpg" alt="other_color-display" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/other_product-info1.jpg" alt="other_product-info1" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/other_shot1.jpg" alt="other_shot1" class="rounded-lg shadow hover:scale-105 transform transition">
+        <img src="./images/product/other_shot2.jpg" alt="other_shot2" class="rounded-lg shadow hover:scale-105 transform transition">
+    </div>
+    </div>
+</section>
+
+<!-- 联系我们 -->
+<section id="contact" class="max-w-7xl mx-auto py-20 px-4 bg-gray-50">
+  <h2 class="text-4xl font-bold text-center mb-12 text-blue-600">CONTACT US</h2>
+  <div class="flex flex-col lg:flex-row gap-12 max-w-7xl mx-auto">
+
+    <!-- 联系信息 -->
+    <div class="bg-white rounded-lg shadow-lg p-8 flex-1 space-y-4">
+      <div class="text-xl font-bold">John HO</div>
+      <div class="text-lg">Mobile/WhatsApp/WeChat</div>
+      <div class="text-lg">ID: +86-138-67696329</div>
+      <div class="text-lg">Tel: +86-576-88880032</div>
+      <div class="text-lg">Fax: +86-576-88925732</div>
+      <div class="text-lg">Email: <a href="mailto:48764989@qq.com" class="text-blue-600 hover:underline">48764989@qq.com</a></div>
+      <div class="text-lg mt-4">Office address: 302-2-28, BiHaiMingZhu, Jiaojiang District, Taizhou city, Zhejiang, China</div>
+      <div class="text-lg">Factory address: Duqiao Glasses Industrial Park, Duqiao Town, Linhai City, Zhejiang, China</div>
+    </div>
+
+    <!-- 工厂介绍视频 -->
+    <div class="flex-1 flex justify-center items-center">
+      <video class="rounded-lg shadow-lg w-full max-w-md" controls autoplay loop x-webkit-airplay="true" webkit-playsinline="true">
+        <source src="images/intro.mp4" type="video/mp4">
+        Your browser does not support HTML5 video tag.
+      </video>
+    </div>
+
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="bg-gray-800 text-white py-6 mt-12">
+    <div class="max-w-7xl mx-auto text-center">
+        &copy; 2025 Yanmu Glasses, all rights reserved.
+    </div>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
