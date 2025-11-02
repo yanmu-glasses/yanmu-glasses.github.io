@@ -23,6 +23,12 @@ header nav ul li a {
     transition: color 0.3s;
 }
 
+header {
+    transition: transform 0.3s ease-in-out;
+    will-change: transform; /* 让浏览器提前优化动画 */
+}
+
+
 header nav ul li a.active {
     color: var(--brand-blue);
     font-weight: 600;
